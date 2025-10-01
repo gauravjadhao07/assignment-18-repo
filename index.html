@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        nav {
+            background-color: #5b5379;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: #F8F4E1;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .c1 {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+                max-width: 400px;
+            }
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 992px) {
+            .container {
+                justify-content: center;
+            }
+
+            .card {
+                width: 45%;
+                max-width: 300px;
+            }
+        }
+
+        @media screen and (min-width: 993px) {
+            .container {
+                justify-content: space-evenly;
+            }
+
+            .card {
+                width: 30%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <img src="./images/pizza (1).png" class="c1">
+            <div class="para">
+                <h4><b>Pizza</b></h4><br>
+                <p>Pizza, an Italian dish, is a flatbread topped with various ingredients like tomato sauce, cheese, and toppings, baked at high temperatures, and is a globally popular food.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/hamburger.png" class="c1">
+            <div class="para">
+                <h4><b>Burger</b></h4><br>
+                <p>A burger, also known as a hamburger, is a dish consisting of a patty of ground meat (typically beef) placed inside a sliced bun or bread roll, often with various toppings.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/french-fries.png" class="c1">
+            <div class="para">
+                <h4><b>Fries</b></h4><br>
+                <p>French fries are a popular side dish or snack made from deep-fried, batonnet or julienne-cut potatoes, often served hot with salt and various sauces.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
